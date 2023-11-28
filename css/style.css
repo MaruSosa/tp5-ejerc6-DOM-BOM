@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/fondoTemporizador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .buttons-container button {
+    margin-right: 10px;
+  }
+  
+  .temporizador {
+    font-size: 66px;
+    color: aquamarine;
+  }
+  h1{
+    color: aquamarine;
+    font-size: 40px;
+  }
+  button{
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: aquamarine;
+  }
+  input{
+    font-size: 20px;
+  }

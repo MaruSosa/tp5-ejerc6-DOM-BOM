@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mariana Sosa" />
+  <meta name="description" content="trabajo practico dom y bom" />
+  <meta name="keywords" content="DOM,BOM,temporizador" />
+  <title>Temporizador</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Temporizador</h1>
+    <div class="temporizador mt-2" id="temporizador">00:00:00</div>
+    <div class="input-container d-flex justify-content">
+      <input type="number" id="inputHoras" placeholder="Horas">
+      <input type="number" id="inputMinutos" placeholder="Minutos">
+      <input type="number" id="inputSegundos" placeholder="Segundos">
+    </div>
+    <div class="buttons-container">
+      <button onclick="iniciarTemporizador()">Iniciar</button>
+      <button onclick="pausarTemporizador()">Pausar</button>
+      <button onclick="reiniciarTemporizador()">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="./js/temporizador.js"></script>
+</body>
+</html>
