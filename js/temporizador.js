@@ -39,7 +39,6 @@ function actualizarTemporizador() {
     alert('¡Tiempo terminado!');
   }
 }
-
 function mostrarTiempo() {
   const horas = Math.floor(tiempoRestante / 3600);
   const minutos = Math.floor((tiempoRestante % 3600) / 60);
