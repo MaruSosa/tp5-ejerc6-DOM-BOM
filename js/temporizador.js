@@ -3,9 +3,10 @@ let tiempoRestante = 0;
 let temporizadorInterval = null;
 
 function iniciarTemporizador() {
-  const horas = parseInt(document.getElementById('inputHoras').value) || 0;
-  const minutos = parseInt(document.getElementById('inputMinutos').value) || 0;
-  const segundos = parseInt(document.getElementById('inputSegundos').value) || 0;
+  const horas = parseInt(document.getElementById("inputHoras").value) || 0;
+  const minutos = parseInt(document.getElementById("inputMinutos").value) || 0;
+  const segundos =
+    parseInt(document.getElementById("inputSegundos").value) || 0;
 
   tiempoTotal = horas * 3600 + minutos * 60 + segundos;
   tiempoRestante = tiempoTotal;
@@ -36,7 +37,7 @@ function actualizarTemporizador() {
     mostrarTiempo();
   } else {
     detenerTemporizador();
-    alert('¡Tiempo terminado!');
+    alert("¡Tiempo terminado!");
   }
 }
 function mostrarTiempo() {
@@ -44,7 +45,9 @@ function mostrarTiempo() {
   const minutos = Math.floor((tiempoRestante % 3600) / 60);
   const segundos = tiempoRestante % 60;
 
-  const tiempoFormateado = `${String(horas).padStart(2, '0')}:${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
-  
-  document.getElementById('temporizador').textContent = tiempoFormateado;
+  const tiempoFormateado = `${String(horas).padStart(2, "0")}:${String(
+    minutos
+  ).padStart(2, "0")}:${String(segundos).padStart(2, "0")}`;
+
+  document.getElementById("temporizador").textContent = tiempoFormateado;
 }
